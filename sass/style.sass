@@ -1,0 +1,417 @@
+$dark-green: #0b4439
+
+
+
+header 
+	background-color: #313234
+	height: 50px
+	
+body
+	margin: 0 auto
+	font-family: "Open sans", sans-serif
+	
+.container
+	max-width: 1200px
+	margin: 0 auto
+	
+header>nav>ul
+	padding: 0
+	margin: 0 auto
+	list-style-type: none
+	float: right
+	
+.clearfix:after 
+	content: "."
+	display: block
+	clear: both
+	visibility: hidden
+	line-height: 0
+	height: 0
+    
+header>nav>ul>li>a
+	line-height: 50px
+	padding: 0 20px
+	display: block
+	color: #fff
+	text-decoration: none
+	text-transform: uppercase
+	
+.container li:hover 
+	background-color: #4b4d51	
+
+header>nav>img 
+	padding: 10px 0	
+header>nav>ul>li 
+	display: inline-block
+.hero .container 
+	background: url(https://images.unsplash.com/photo-1477611160464-0b9fb6404529?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=)
+	background-size: cover
+	height: calc(100vh - 50px)
+	min-height: 500px
+	margin: 0 auto
+	display: block
+	position: relative
+    
+.slogan 
+	right: 0
+	max-width: 800px
+	box-sizing: border-box
+	position: absolute
+	top: 100px
+
+	h1 
+		background: rgba(75, 77, 81, 0.4)
+		font-weight: bold	
+		color: #fff
+		box-sizing: border-box
+		text-transform: uppercase
+		text-shadow: 3px 3px #000
+		font-family: "Open sans", sans-serif
+		font-size: 28px
+		padding: 25px 200px 25px 100px
+
+.row
+	&:before,
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	padding: 10px
+	box-sizing: border-box
+
+
+.row 
+	margin: 0 auto
+	text-align: center
+
+.benefits 
+	.row 
+		margin-top: 30px	
+
+	.col-4 
+		h2 
+			color: #0b4439
+			text-align: center
+
+		i 
+			background-color: #a0a0a0
+			border-radius: 50%
+			width: 170px
+			height: 170px
+			line-height: 170px
+			color: $dark-green
+			text-align: center
+
+	p 
+		color: #000	
+
+.benefits
+	.col-4
+		i 
+			&:hover
+				background-color: #666
+				cursor: pointer
+			
+
+section>.container 
+	margin: 50px auto
+	text-align: center
+
+hr 
+	border-width: 3px
+	border-color: $dark-green
+
+.allabout 
+	text-align: center
+	margin-bottom: 10px
+	
+	h2 
+		text-transform: uppercase
+		font-size: 40px
+		color: $dark-green
+		text-align: center	
+
+.gallery
+	div 
+		padding: 0
+
+.images 
+	position: relative
+
+	img 
+		width: 100%
+		height: 300px
+		display: block
+	
+.gallery
+	.layer 
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0)
+	
+		position: absolute
+		top: 0
+		left: 0
+		transition: background 800ms
+		color: #fff
+		text-align: center
+	
+		.fa 
+			margin-right: 25px
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			opacity: 0
+			transition: opacity 800ms	
+
+.layer
+	.fa:last-child 
+		margin-right: 0
+
+.images:hover .layer 
+	background: rgba(0, 0, 0, .6)
+
+.images:hover .layer .fa 
+	opacity: 1
+
+
+.circle 
+	border-radius: 50%
+	width: 170px
+	height: 170px
+	line-height: 170px
+	margin: 0 auto
+	background: #A0A0A0
+	text-align: center
+	color: $dark-green
+	font-size: 15px
+	transition: background 600ms
+
+	p 
+		opacity: 0
+		transition: opacity 600ms
+
+.circle
+	&:hover p
+		opacity: 1
+			
+
+.circle 
+	&:hover
+		background: #d9d9d9
+		cursor: pointer
+
+
+.teamcolumns
+	h2 
+		text-align: center
+		color: #fff
+  	
+	.col-3 
+		padding-top: 50px
+
+.row 
+	.col-3 
+		background-color: $dark-green	
+
+.grid 
+	.photo 
+		height: 400px	
+
+.photo > .row > .col-4 > img 
+	width: 100%
+	max-height: 100%
+	height: auto
+	padding: 0
+	margin: 0
+
+.photo 
+	.row 
+		background-color: #1a1a1a
+		height: 290px
+		
+		.col-8 
+			background-color: #1a1a1a
+			height: 100%
+			
+			h2, p 
+				color: #fff
+				text-align: center
+	img 
+		height: 380px
+	
+.stats 
+	background-color: #444954
+	p
+		text-align: center	
+		color: #fff	
+	h2
+		text-align: center	
+		color: #fff
+		font-size: 250%
+		font-weight: bolder
+.footer
+	.row 
+		background-color: #237568	
+
+		h2 
+			text-transform: uppercase
+			display: inline-block
+			position: relative
+			color: #fff
+
+		p 
+			text-align: left
+			color: white
+			font-family: 'Open sans'
+		
+		h2::after 
+			content: ''
+			width: 40px
+			height: 2px
+			background: #fff
+			display: block
+			position: absolute
+			top: 50%
+			left: calc(100% + 10px)
+
+		.col-8 
+			height: auto
+
+		.col-4 
+			i 
+				float: left
+				color: #fff
+				margin: 5px
+				font-size: 300%
+				cursor: pointer
+
+.footer2 
+	height: 50px
+	line-height: 50px
+	text-align: center
+	margin: 0 auto
+	background-color: $dark-green
+
+	p 
+		color: #fff
+		margin-top: 0
+
+	.col-4 
+		text-align: left
+
+.col-1
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33333%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66666%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2 
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33333%
+.col-offset-5 
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66666%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+.col-offset-12 
+	margin-left: 100%
+
+@media only screen and (max-width: 768px) 
+	[class*="col-"] 
+		width: 100%
+    	
+	.benefits .col-4 
+		width: 100%	
+    
+	.footer h2 
+		text-align: left
+		display: inline
+    
+	.info p 
+		margin: 0	
+    
+	.info .col-4 p 
+		font-weight: bold	
+    
+
+@media only screen and (max-width: 360px) 
+	header 
+		height: auto	
+	
+	nav 
+		position: relative
+		display: block
+	
+	header>nav>img 
+		padding: 15px 93.5px 15px 93.5px
+	
+	.slogan 
+		position: absolute
+		bottom: 50px
+	
+	.slogan
+		h1 
+			float: right
+			text-align: right
+			padding: 20px 50px 20px 20px
+	
+	.container 
+		ul 
+			position: static
+			float: none
+			display: block
+			z-index: 9
+			li 
+				float: none
+				text-align: left
+				display: inherit
+				a
+					text-align: center
+	
+	
+
+@media only screen and (max-width: 1920px) 
+	body 
+		max-width: 1200px
+		width: 100%
+		margin: 0 auto
+	
